@@ -18,8 +18,8 @@
       <Description>API key used for interacting with the Alma API.</Description>
     </Setting>
     <Setting name="Allow Overwrite With Blank Value" value="true" type="boolean">
-			<Description>Blank values returned from the lookup response will overwrite existing information in the field.</Description>
-		</Setting>
+      <Description>Blank values returned from the lookup response will overwrite existing information in the field.</Description>
+  </Setting>
     <Setting name="Fields to Import" value="CallNumber, ISXN, Title, Author, Edition, Place, Pages, Publisher" type="string">
       <Description>The list of fields to import from the API response.</Description>
     </Setting>
