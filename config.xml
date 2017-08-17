@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Alma Barcode Lookup</Name>
+  <Author>Atlas Systems, Inc.</Author>
+  <Version>1.0</Version>
+  <Active>true</Active>
+  <Type>Addon</Type>
+  <Description>Performs a LookupItem request to the specified NCIP Responder.</Description>
+  <Forms>
+    <Form>FormItem</Form>
+    <Form>FormRequest</Form>
+  </Forms>
+  <Settings>
+    <Setting name="Alma API URL" value="https://api-na.hosted.exlibrisgroup.com/almaws/v1/" type="string">
+      <Description>The URL to the Alma API</Description>
+    </Setting>
+    <Setting name="Alma API Key" value="" type="string">
+      <Description>API key used for interacting with the Alma API.</Description>
+    </Setting>
+    <Setting name="Allow Overwrite With Blank Value" value="true" type="boolean">
+			<Description>Blank values returned from the lookup response will overwrite existing information in the field.</Description>
+		</Setting>
+    <Setting name="Fields to Import" value="CallNumber, ISXN, Title, Author, Edition, Place, Pages, Publisher" type="string">
+      <Description>The list of fields to import from the NCIP response.</Description>
+    </Setting>
+    <Setting name="Field to Perform Lookup With" value="{Default}" type="string">
+      <Description>The field that is used to perform the NCIP lookup. The first value is the table in the database the second is the column.</Description>
+    </Setting>
+  </Settings>
+  <Files>
+    <File>Utility.lua</File>
+    <File>DataMapping.lua</File>
+    <File>Main.lua</File>
+    <File>WebClient.lua</File>
+    <File>LookupUtility.lua</File>
+    <File>AlmaApi.lua</File>
+    <File>AlmaLookup.lua</File>
+  </Files>
+</Configuration>
