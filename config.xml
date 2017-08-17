@@ -21,10 +21,10 @@
 			<Description>Blank values returned from the lookup response will overwrite existing information in the field.</Description>
 		</Setting>
     <Setting name="Fields to Import" value="CallNumber, ISXN, Title, Author, Edition, Place, Pages, Publisher" type="string">
-      <Description>The list of fields to import from the NCIP response.</Description>
+      <Description>The list of fields to import from the API response.</Description>
     </Setting>
     <Setting name="Field to Perform Lookup With" value="{Default}" type="string">
-      <Description>The field that is used to perform the NCIP lookup. The first value is the table in the database the second is the column.</Description>
+      <Description>The field that is used to perform the Alma Item lookup. The first value is the table in the database the second is the column.</Description>
     </Setting>
   </Settings>
   <Files>
