@@ -5,7 +5,7 @@
   <Version>1.0</Version>
   <Active>true</Active>
   <Type>Addon</Type>
-  <Description>Performs a LookupItem request to the specified NCIP Responder.</Description>
+  <Description>Performs an Alma Item lookup with the item's barcode and imports the results.</Description>
   <Forms>
     <Form>FormItem</Form>
     <Form>FormRequest</Form>
