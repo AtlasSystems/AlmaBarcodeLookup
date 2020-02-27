@@ -69,7 +69,6 @@ table.insert(DataMapping.FieldMapping["Ares"], {
     ObjectType = "item",
     ObjectMapping = "publisher_const"
 });
-
 table.insert(DataMapping.FieldMapping["Ares"], {
     MappingName = "Location",
     ImportField = "Item.ShelfLocation",
