@@ -70,6 +70,21 @@ table.insert(DataMapping.FieldMapping["Ares"], {
     ObjectMapping = "publisher_const"
 });
 
+-- New Ares field addition : 2-27-2020 --
+table.insert(DataMapping.FieldMapping["Ares"], {
+    MappingName = "Location",
+    ImportField = "Item.ShelfLocation",
+    ObjectType = "item",
+    ObjectMapping = "location"
+});
+table.insert(DataMapping.FieldMapping["Ares"], {
+    MappingName = "PubDate",
+    ImportField = "Item.PubDate",
+    ObjectType = "item",
+    ObjectMapping = "date_of_publication"
+});
+-- End new Ares field addition : 2-27-2020 --
+
 -- ILLiad Field Mapping
 DataMapping.FieldMapping["ILLiad"] = {};
 table.insert(DataMapping.FieldMapping["ILLiad"], {
