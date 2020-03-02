@@ -59,6 +59,9 @@ Below are the default data mappings from the API response to Ares, Aeon, and ILL
 | Place        | Item.PubPlace   | item        | place_of_publication |
 | Pages        | Item.PageCount  | item        | pages         |
 | Publisher    | Item.Publisher  | item        | publisher_const          |
+| Location     | Item.ShelfLocation | item     | location |
+| PubDate      | Item.PubDate    | item        | `date_of_publication` |
+
 
 ### ILLiad
 >***Note:*** Because ILLiad supports multiple request types, separate mappings to both *Loan* and *Article* can be provided to the appropriate fields.
