@@ -1,6 +1,9 @@
 # Alma Barcode Lookup Addon
 
 ## Versions
+
+**1.1 -** Added new default mappings to the DataMapping.lua
+
 **1.0 -** Initial release
 
 ## Summary
