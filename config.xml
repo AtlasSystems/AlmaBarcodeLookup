@@ -2,7 +2,7 @@
 <Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>Alma Barcode Lookup</Name>
   <Author>Atlas Systems, Inc.</Author>
-  <Version>1.1.0</Version>
+  <Version>1.1.1</Version>
   <Active>true</Active>
   <Type>Addon</Type>
   <Description>Performs an Alma Item lookup with the item's barcode and imports the results.</Description>

@@ -44,7 +44,11 @@ function Init()
 
   -- Find the field to perform lookup with
   if settings.FieldToPerformLookupWith:lower() == "{default}" then
-    settings.FieldToPerformLookupWith = Utility.StringSplit(".", DataMapping.BarcodeFieldMapping[product]);
+    settings.FieldToPerformLookupWith = DataMapping.BarcodeFieldMapping[product];
+  end
+
+  if settings.FieldToPerformLookupWith:find("^%a+%.%a+$") then
+    settings.FieldToPerformLookupWith = Utility.StringSplit(".", settings.FieldToPerformLookupWith);
     settings.FieldToPerformLookupWith[1] = Utility.Trim(settings.FieldToPerformLookupWith[1]);
     settings.FieldToPerformLookupWith[2] = Utility.Trim(settings.FieldToPerformLookupWith[2]);
     log:InfoFormat("Field to Perform Lookup With is {0}.{1}", settings.FieldToPerformLookupWith[1], settings.FieldToPerformLookupWith[2]);
